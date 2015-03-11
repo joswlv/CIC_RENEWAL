@@ -1,4 +1,21 @@
 CichomepageRe::Application.routes.draw do
+  get "useradd/signup"
+  get "useradd/signup_complete"
+  get "useradd/login"
+  get "useradd/login_complete"
+  get "useradd/logout_complete"
+  get "equlp_board/post_equlp"
+  get "equlp_board/reservation_complete"
+  get "equlp_board/num_status_complete"
+  get "equlp_board/status_complete"
+  get "community_board/posts"
+  get "community_board/show"
+  get "community_board/write"
+  get "community_board/edit"
+  get "community_board/write_complete"
+  get "community_board/edit_complete"
+  get "community_board/delete_complete"
+  get "community_board/posts_complete"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

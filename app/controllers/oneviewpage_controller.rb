@@ -1,0 +1,2 @@
+class OneviewpageController < ApplicationController
+end
