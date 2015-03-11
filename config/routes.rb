@@ -8,16 +8,16 @@ Cichomepage::Application.routes.draw do
   get "equlp_board/reservation_complete"
   get "equlp_board/numstatus_complete"
   get "equlp_board/status_complete"
-  get "index/index_page"
+  root "index#index_page"
   get "index/index_complete"
-  get "community_board/cicpost"
-  get "community_board/imgpost"
-  get "community_board/freepost"
-  get "community_board/datapost"
-  get "community_board/eventpost"
-  get "community_board/graduatepost"
-  get "community_board/jobpost"
-  get "community_board/faqpost"
+  get "/cicposts" => 'community_board#cicpost'
+  get "/imgposts" => 'community_board#imgpost'
+  get "/dataposts" => 'community_board#datapost'
+  get "/eventposts" => 'community_board#eventpost'
+  get "/graduateposts" =>'community_board#graduatepost'
+  get "/jobposts" => 'community_board#jobpost'
+  get "/faqposts" => 'community_board#faqpost'
+  get "/freeposts" => 'community_board#freepost'
   get "community_board/posts"
   get "community_board/show"
   get "community_board/write"
@@ -26,6 +26,29 @@ Cichomepage::Application.routes.draw do
   get "community_board/edit_complete"
   get "community_board/delete_complete"
   get "community_board/posts_complete"
+  get "/Greetings" => 'onepage#greetings'
+  get "/History" => 'onepage#history'
+  get "/Introduction" => 'onepage#introduction'
+  get "/Goals" => 'onepage#goals'
+  get "/Procedure" => 'onepage#pistory'
+  get "/Employment" => 'onepage#employment'
+  get "/Curriculum" => 'onepage#curriculum'
+  get "/Courses" => 'onepage#courses'
+  get "/Required" => 'onepage#required'
+  get "/Summary" => 'onepage#summary'
+  get "/Standard" => 'onepage#standard'
+  get "/SysGraph" => 'onepage#sysgraph'
+  get "/Professor" => 'onepage#professor'
+  get "/Assistant" => 'onepage#assistant'
+  get "/Student" => 'onepage#student'
+  get "/Representative" => 'onepage#representative'
+  get "/Signal_lab" => 'onepage#signal_lab'
+  get "/Ubiquitous_lab" => 'onepage#ubiquitous_lab'
+  get "/Software_lab" => 'onepage#software_lab'
+  get "/Internet_lab" => 'onepage#internet_lab'
+  get "/Network_lab" => 'onepage#network_lab'
+  get "/Robotics_lab" => 'onepage#robotics_lab'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
