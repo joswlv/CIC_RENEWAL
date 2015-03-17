@@ -18,6 +18,8 @@ Cichomepage::Application.routes.draw do
   get "/jobposts" => 'community_board#jobpost'
   get "/faqposts" => 'community_board#faqpost'
   get "/freeposts" => 'community_board#freepost'
+  get "/login" => 'useradd#login'
+  get "/signup" => 'useradd#signup'
   get "community_board/posts"
   get "community_board/show"
   get "community_board/write"
